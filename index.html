@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="pl" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Atlas Biblijny 3D | Zobacz świat Biblii na mapach</title>
+    <script>
+      (function() {
+        try {
+          var nativeFetch = typeof window !== 'undefined' ? window.fetch : undefined;
+          if (nativeFetch) {
+            var activeFetch = nativeFetch;
+            Object.defineProperty(window, 'fetch', {
+              get: function() {
+                return activeFetch;
+              },
+              set: function(fn) {
+                activeFetch = fn;
+              },
+              configurable: true,
+              enumerable: true
+            });
+          }
+        } catch (e) {}
+      })();
+    </script>
+    <meta name="description" content="Odkryj miejsca, miasta, trasy i krajobrazy znane z Biblii dzięki mapom, wizualizacjom i rekonstrukcjom 3D. Atlas Biblijny 3D od Księgi Rodzaju po Apokalipsę." />
+    <meta property="og:title" content="Atlas Biblijny 3D | Od Księgi Rodzaju po Apokalipsę" />
+    <meta property="og:description" content="Odkryj miejsca, miasta, trasy i krajobrazy znane z Biblii dzięki szczegółowym mapom, wizualizacjom i rekonstrukcjom 3D." />
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content="pl_PL" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700;800;900&family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Inter:wght@300;400;500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  </head>
+  <body class="bg-[#07111D] text-[#EFE3CF] font-sans antialiased selection:bg-[#D89B37]/30 selection:text-[#EAB85F]">
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
+
