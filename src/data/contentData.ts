@@ -8,20 +8,33 @@ import {
   BenefitItem 
 } from '../types';
 
-// Asset paths from generated images
+import heroMockupImg from '../assets/images/hero_atlas_mockup_1787192331082.jpg';
+import caesareaImg from '../assets/images/caesarea_3d_1787192342113.jpg';
+import templeHerodImg from '../assets/images/jerusalem_temple_3d_1787192351706.jpg';
+import paulJourneysImg from '../assets/images/paul_journeys_map_1787192360987.jpg';
+import tabernacleImg from '../assets/images/tabernacle_desert_3d_1787192369195.jpg';
+import mesopotamiaImg from '../assets/images/mesopotamia_city_3d_1787192381188.jpg';
+import noahArkImg from '../assets/images/noah_ark_3d_1787192392358.jpg';
+import seaGalileeImg from '../assets/images/sea_galilee_3d_1787192401864.jpg';
+import sevenChurchesImg from '../assets/images/seven_churches_3d_1787192410989.jpg';
+import bethanyImg from '../assets/images/bethany_tomb_3d_1787192426984.jpg';
+import mountMoriahImg from '../assets/images/mount_moriah_3d_1787192435826.jpg';
+import samariaSycharImg from '../assets/images/samaria_sychar_3d_1787192444658.jpg';
+
+// Asset paths bundled by Vite
 export const IMAGES = {
-  heroMockup: '/src/assets/images/hero_atlas_mockup_1787192331082.jpg',
-  caesarea: '/src/assets/images/caesarea_3d_1787192342113.jpg',
-  templeHerod: '/src/assets/images/jerusalem_temple_3d_1787192351706.jpg',
-  paulJourneys: '/src/assets/images/paul_journeys_map_1787192360987.jpg',
-  tabernacle: '/src/assets/images/tabernacle_desert_3d_1787192369195.jpg',
-  mesopotamia: '/src/assets/images/mesopotamia_city_3d_1787192381188.jpg',
-  noahArk: '/src/assets/images/noah_ark_3d_1787192392358.jpg',
-  seaGalilee: '/src/assets/images/sea_galilee_3d_1787192401864.jpg',
-  sevenChurches: '/src/assets/images/seven_churches_3d_1787192410989.jpg',
-  bethany: '/src/assets/images/bethany_tomb_3d_1787192426984.jpg',
-  mountMoriah: '/src/assets/images/mount_moriah_3d_1787192435826.jpg',
-  samariaSychar: '/src/assets/images/samaria_sychar_3d_1787192444658.jpg',
+  heroMockup: heroMockupImg,
+  caesarea: caesareaImg,
+  templeHerod: templeHerodImg,
+  paulJourneys: paulJourneysImg,
+  tabernacle: tabernacleImg,
+  mesopotamia: mesopotamiaImg,
+  noahArk: noahArkImg,
+  seaGalilee: seaGalileeImg,
+  sevenChurches: sevenChurchesImg,
+  bethany: bethanyImg,
+  mountMoriah: mountMoriahImg,
+  samariaSychar: samariaSycharImg,
 };
 
 export const PREVIEW_ITEMS: PreviewItem[] = [

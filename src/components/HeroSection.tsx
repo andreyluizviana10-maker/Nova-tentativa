@@ -12,7 +12,7 @@ import {
   MapPin,
   CheckCircle2
 } from 'lucide-react';
-import { IMAGES } from '../data/contentData';
+import heroMockup from '../assets/images/hero_atlas_mockup_1787192331082.jpg';
 
 interface HeroSectionProps {
   onScrollToOffer: () => void;
@@ -155,7 +155,7 @@ export const HeroSection: React.FC<HeroSectionProps> = ({ onScrollToOffer }) => 
                 {/* Mockup visual representation */}
                 <div className="relative rounded-xl overflow-hidden bg-[#07111D] border border-[#D89B37]/25 aspect-[16/11]">
                   <img
-                    src={IMAGES.heroMockup}
+                    src={heroMockup}
                     alt="Atlas Biblijny 3D - Mockup wydania cyfrowego z mapami topograficznymi"
                     referrerPolicy="no-referrer"
                     className="w-full h-full object-cover object-center transform transition-transform duration-700 group-hover:scale-105"

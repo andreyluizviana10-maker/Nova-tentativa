@@ -1,6 +1,6 @@
 import React from 'react';
 import { HelpCircle, Eye, Compass, Mountain, MapPin } from 'lucide-react';
-import { IMAGES } from '../data/contentData';
+import caesareaImg from '../assets/images/caesarea_3d_1787192342113.jpg';
 
 export const ProblemSection: React.FC = () => {
   return (
@@ -91,7 +91,7 @@ export const ProblemSection: React.FC = () => {
               {/* Large 3D Caesarea Philippi Image */}
               <div className="rounded-xl overflow-hidden border border-[#D89B37]/40 mb-5 relative aspect-[16/9] bg-[#07111D]">
                 <img
-                  src={IMAGES.caesarea}
+                  src={caesareaImg}
                   alt="3D Rekonstrukcja topograficzna Cezarei Filipowej u stóp góry Hermon"
                   referrerPolicy="no-referrer"
                   className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
