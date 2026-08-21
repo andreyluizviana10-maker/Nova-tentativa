@@ -5,11 +5,6 @@ import {
   ShieldCheck, 
   Award, 
   Lock, 
-  BookMarked, 
-  Sparkles, 
-  Smartphone, 
-  Layers, 
-  MapPin,
   CheckCircle2
 } from 'lucide-react';
 import heroMockup from '../assets/images/hero_atlas_mockup_1787192331082.jpg';
@@ -72,9 +67,8 @@ export const HeroSection: React.FC<HeroSectionProps> = ({ onScrollToOffer }) => 
               </button>
 
               <div className="flex items-center justify-center sm:justify-start gap-2 text-xs text-[#C8B99F]">
-                <span className="text-[#35D47A] font-bold">37,90 zł</span>
-                <span>•</span>
-                <span>Jednorazowa opłata</span>
+                <span className="w-2 h-2 rounded-full bg-[#35D47A]"></span>
+                <span>Dostęp natychmiastowy w formacie PDF</span>
               </div>
             </div>
 
@@ -143,16 +137,16 @@ export const HeroSection: React.FC<HeroSectionProps> = ({ onScrollToOffer }) => 
 
           </div>
 
-          {/* RIGHT COLUMN - SOPHISTICATED PRODUCT MOCKUP */}
+          {/* RIGHT COLUMN - SOPHISTICATED PRODUCT MOCKUP ONLY */}
           <div className="lg:col-span-5 relative flex flex-col items-center">
             
             {/* Visual glow frame */}
             <div className="relative w-full max-w-lg lg:max-w-none group">
               <div className="absolute -inset-2 bg-gradient-to-r from-[#D89B37]/25 via-[#EAB85F]/20 to-[#35D47A]/15 rounded-3xl blur-xl opacity-75 group-hover:opacity-100 transition duration-1000"></div>
 
-              <div className="relative rounded-2xl bg-[#0D1725] border border-[#D89B37]/40 p-4 sm:p-5 shadow-2xl overflow-hidden">
+              <div className="relative rounded-2xl bg-[#0D1725] border border-[#D89B37]/40 p-3 sm:p-4 shadow-2xl overflow-hidden">
                 
-                {/* Mockup visual representation */}
+                {/* Clean mockup visual representation */}
                 <div className="relative rounded-xl overflow-hidden bg-[#07111D] border border-[#D89B37]/25 aspect-[16/11]">
                   <img
                     src={heroMockup}
@@ -160,59 +154,9 @@ export const HeroSection: React.FC<HeroSectionProps> = ({ onScrollToOffer }) => 
                     referrerPolicy="no-referrer"
                     className="w-full h-full object-cover object-center transform transition-transform duration-700 group-hover:scale-105"
                   />
-                  
-                  {/* Floating seal on mockup */}
-                  <div className="absolute top-3 left-3 bg-[#07111D]/90 backdrop-blur-md border border-[#D89B37]/60 text-[#EAB85F] px-3 py-1.5 rounded-lg text-xs font-bold font-serif shadow-lg flex items-center gap-1.5">
-                    <Sparkles className="w-3.5 h-3.5 text-[#D89B37]" />
-                    <span>300+ STRON W HD</span>
-                  </div>
-
-                  {/* Tag on bottom right */}
-                  <div className="absolute bottom-3 right-3 bg-[#07111D]/90 backdrop-blur-md border border-[#35D47A]/40 text-[#35D47A] px-2.5 py-1 rounded-md text-[11px] font-semibold flex items-center gap-1">
-                    <span className="w-1.5 h-1.5 rounded-full bg-[#35D47A]"></span>
-                    <span>Wersja Cyfrowa 2026</span>
-                  </div>
-                </div>
-
-                {/* Bottom Attention Box */}
-                <div className="mt-4 p-3 rounded-xl bg-[#111C2C] border border-[#D89B37]/25 flex items-center justify-between gap-3 text-left">
-                  <div className="flex items-center gap-3">
-                    <div className="w-9 h-9 rounded-lg bg-[#D89B37]/20 border border-[#D89B37]/40 flex items-center justify-center text-[#EAB85F] shrink-0">
-                      <Smartphone className="w-5 h-5" />
-                    </div>
-                    <div>
-                      <p className="text-xs sm:text-sm font-semibold text-[#EFE3CF]">
-                        Cyfrowy dostęp • Natychmiastowe pobranie
-                      </p>
-                      <p className="text-[11px] text-[#C8B99F]">
-                        Otwórz na telefonie, tablecie, czytniku lub komputerze
-                      </p>
-                    </div>
-                  </div>
-
-                  <div className="text-right shrink-0">
-                    <span className="text-[11px] text-[#C8B99F] line-through block">149,90 zł</span>
-                    <span className="text-sm sm:text-base font-extrabold text-[#EAB85F]">37,90 zł</span>
-                  </div>
                 </div>
 
               </div>
-            </div>
-
-            {/* Micro Highlights below image */}
-            <div className="mt-4 flex items-center justify-center gap-6 text-xs text-[#C8B99F]">
-              <span className="flex items-center gap-1.5">
-                <BookMarked className="w-4 h-4 text-[#D89B37]" />
-                Format PDF HD
-              </span>
-              <span className="flex items-center gap-1.5">
-                <MapPin className="w-4 h-4 text-[#D89B37]" />
-                Ponad 100 map 3D
-              </span>
-              <span className="flex items-center gap-1.5">
-                <Layers className="w-4 h-4 text-[#D89B37]" />
-                8 bonusów w cenie
-              </span>
             </div>
 
           </div>

@@ -55,7 +55,7 @@ export const Navbar: React.FC<NavbarProps> = ({ onScrollToOffer }) => {
             id="nav-cta-btn"
             className="gold-btn px-4 sm:px-6 py-2 sm:py-2.5 rounded-lg text-xs sm:text-sm font-bold flex items-center gap-2 shadow-[0_4px_15px_rgba(216,155,55,0.25)] hover:shadow-[0_6px_20px_rgba(216,155,55,0.4)] cursor-pointer"
           >
-            <span>Zamów Atlas — 37,90 zł</span>
+            <span>Odbierz Atlas</span>
             <ArrowRight className="w-4 h-4" />
           </button>
         </div>
